@@ -24,7 +24,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
+        $this->app['request']->server->set('HTTPS', true);
 	    if ($this->app->environment() !== 'production') {
 		    $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
 	    }

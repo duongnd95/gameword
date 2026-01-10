@@ -5,6 +5,7 @@
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta name="theme-color" content="#ffffff">
     <!-- CSRF Token -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="manifest" href="{{ asset('manifest.json') }}">
     <link href="{{ url (mix ('/css/all.css') ) }}" rel="stylesheet" type="text/css" />
