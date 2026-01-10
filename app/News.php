@@ -59,43 +59,7 @@ class News extends Model
         return $arr;
     }
 
-    public static function uploadAndResize($image, $width = 450, $height = null)
-    {
-        if (!$image) return null;
-
-        // ❗ KHÔNG có dấu / ở đầu
-        $folder = 'images/news';
-
-        // ✅ ĐÚNG disk
-        $disk = \Storage::disk('public');
-
-        if (!$disk->exists($folder)) {
-            $disk->makeDirectory($folder);
-        }
-
-        $timestamp = now()->format('Y-m-d_H-i-s');
-        $ext = $image->getClientOriginalExtension();
-        $filename = str_slug(pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME));
-
-        $path = $folder.'/'.$timestamp.'-'.$filename.'.'.$ext;
-
-        $img = \Image::make($image->getRealPath());
-
-        if ($height) {
-            $img->resize($width, $height, function ($constraint) {
-                $constraint->aspectRatio();
-            });
-        }
-
-        // ✅ Lưu đúng vào storage/app/public
-        $img->save($disk->path($path));
-
-        // ✅ URL public
-        return asset('storage/'.$path);
-    }
-
-
-    static public function uploadAndResizeOld($image, $width = 450, $height = null){
+    static public function uploadAndResize($image, $width = 450, $height = null){
         if(empty($image)) return;
         $folder = "/images/news/";
         if(!\Storage::disk(config('filesystems.disks.public.visibility'))->has($folder)){
