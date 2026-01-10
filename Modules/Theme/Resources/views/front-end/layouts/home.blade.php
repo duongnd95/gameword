@@ -79,7 +79,7 @@
                                             <a class="item-link"
                                                href="{{ url(optional($news[0]->category)->slug) }}">{{ optional($news[0]->category)->title }}</a>
                                             <span>-&nbsp;&nbsp;</span>
-                                            <span>{{ _("Update ").Carbon\Carbon::parse($news[0]->updated_at)->format(config('settings.format.date')) }}</span>
+                                            <span>{{ __("Update ").Carbon\Carbon::parse($news[0]->updated_at)->format(config('settings.format.date')) }}</span>
                                         </div>
                                     @endif
                                 </div>
@@ -98,7 +98,7 @@
                                                 <a href="{{ url($item->category->slug . '/' .$item->slug) }}.html"
                                                    class="news__title--small">{{ \Illuminate\Support\Str::limit($item->title, 60) }}</a>
                                                 <span class="news__date">
-                                                 <i>{{ _("Update ").Carbon\Carbon::parse($item->updated_at)->format(config('settings.format.date')) }}</i>
+                                                 <i>{{ __("Update ").Carbon\Carbon::parse($item->updated_at)->format(config('settings.format.date')) }}</i>
                                             </span>
                                             </div>
                                         </div>

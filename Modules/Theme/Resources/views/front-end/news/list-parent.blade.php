@@ -156,7 +156,7 @@
                                                             </a>
                                                         </h5>
                                                         <div class="news__date">
-                                                            <span>{{ _("Update ").Carbon\Carbon::parse($news[0]->updated_at)->format(config('settings.format.date')) }}</span>
+                                                            <span>{{ __("Update ").Carbon\Carbon::parse($news[0]->updated_at)->format(config('settings.format.date')) }}</span>
                                                         </div>
                                                     </div>
                                                 </div>
