@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../../webfonts/Roboto-Regular.ttf");
+}
+body{
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #515555;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+a{
+  color: $green;
+  @include animation(transition,all ease-in 200ms)
+}
+a:hover{
+  text-decoration: none;
+  color: #2f8c1a;
+  @include animation(transition,all ease-out 200ms)
+}
+.page-item.active .page-link {
+  background-color: #1f5014 !important;
+  border-color: #1f5014 !important;
+}
+.lazyload {
+  background: #ebebeb;
+}
+
+.form-control{
+  box-shadow: none !important;
+}
+.list-inline-block {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+

@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'msg' => 'Msg',
+    'record_table' => 'Record Table',
+    'record_id' => 'Record Id',
+    'user_from_id' => 'User From Id',
+    'action' => 'Action',
+    'category' => 'Thông báo',
+    'notifications' => 'Thông báo',
+    'title' => 'Tiêu đề',
+    'avatar' => 'Hình ảnh',
+    'meta_title'=> 'Tiêu đề',
+    'meta_description' => 'Mô tả',
+    'content' => 'Nội dung',
+    'level' => 'Thể loại',
+    'slug' => 'Slug',
+    'url' => 'Đường dẫn URL',
+    'image' => 'Hình Ảnh',
+    'description' => 'Mô tả',
+    'active' => 'Duyệt',
+    'created_at' => 'Ngày Tạo',
+    'updated_at' => 'Ngày Cập Nhật',
+    'created_success' => 'Thông báo đã được thêm!',
+    'updated_success' => 'Thông báo đã được cập nhật!',
+    'deleted_success' => 'Thông báo đã được xóa!',
+];

@@ -1,0 +1,128 @@
+.sidebar {
+  &-title {
+    background-color: $bg-nav;
+    color: $white;
+    font-size: 20px;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    @media (min-width: 992px) and (max-width: 1199px) {
+      font-size: 20px;
+      padding: 15px 7px;
+    }
+    .fas {
+      margin-right: 10px;
+    }
+  }
+
+}
+.dropdown-container {
+  display: none;
+  background-color: #f2f2f2;
+}
+.li-list-trust {
+  padding: 5px;
+  &:not(:last-child) {
+    border-bottom: 1px solid #E0E0E0;
+  }
+}
+.sidebar-group {
+  border: 1px solid #E0E0E0;
+}
+.sidebar-title {
+  background-color: #E7401E!important;
+}
+.sidebar {
+  &.active {
+    left: 0;
+  }
+  .group-item {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 0;
+    }
+    .nav-item {
+      &.active {
+        color: #1960a1;
+        font-weight: 500;
+      }
+    }
+  }
+  position: fixed;
+  top: 0;
+  left: -320px;
+  background: #fff;
+  width: 320px;
+  height: 100%;
+  transition: 0.3s;
+  z-index: 999;
+  img {
+    padding: 7px;
+  }
+  ul {
+    margin: 0;
+    padding: 20px 0;
+    li {
+      list-style: none;
+      a {
+        display: block;
+        padding: 10px 20px;
+        color: #000;
+        cursor: pointer;
+        text-decoration: none;
+        border-bottom: solid 1px #ebebeb;
+        .dropdown-icon {
+          float: right;
+          color: #828282;
+          -webkit-transition: transform 0.5s ease;
+          -o-transition: transform 0.5s ease;
+          transition: transform 0.5s ease;
+          &.active {
+            -webkit-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropdown-item {
+  font-size: 17px;
+  &:not(:last-child) {
+    border-bottom: solid 1px #e5e6ec !important;
+  }
+  &:hover {
+    color: #0056b3 !important;
+    text-decoration: none;
+    background-color: #fff !important;
+  }
+}
+
+.sidebarBtn {
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  right: 5%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  color: #fff !important;
+}
+#overlay {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}

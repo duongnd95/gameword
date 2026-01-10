@@ -1,0 +1,51 @@
+@extends('adminlte::layouts.app')
+@section('htmlheader_title')
+    %%modelName%%
+@endsection
+@section('contentheader_title')
+    %%modelName%%
+@endsection
+@section('contentheader_description')
+    
+@endsection
+@section('breadcrumb')
+    <ol class="breadcrumb">
+        <li><a href="{{ url("admin") }}"><i class="fa fa-home"></i> {{ __("message.dashboard") }}</a></li>
+        <li><a href="{{ url('/%%routeGroup%%%%viewName%%') }}">%%modelName%%</a></li>
+        <li class="active">{{ __("message.detail") }}</li>
+    </ol>
+@endsection
+@section('main-content')
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">{{ __("message.detail") }}</h3>
+            <div class="box-tools">
+                <a href="{{ url('/%%routeGroup%%%%viewName%%') }}" class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span class="hidden-xs">{{ trans('message.lists') }}</span></a>
+                <a href="{{ url('/%%routeGroup%%%%viewName%%/' . $%%crudNameSingular%%->%%primaryKey%% . '/edit') }}" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> <span class="hidden-xs">{{ __('message.edit') }}</span></a>
+                {!! Form::open([
+                    'method'=>'DELETE',
+                    'url' => ['%%routeGroup%%%%crudName%%', $%%crudNameSingular%%->%%primaryKey%%],
+                    'style' => 'display:inline'
+                ]) !!}
+                    {!! Form::button('<i class="fa fa-trash-o" aria-hidden="true"></i> <span class="hidden-xs">'.__('message.delete').'</span>', array(
+                            'type' => 'submit',
+                            'class' => 'btn btn-danger btn-sm',
+                            'title' => __('message.delete'),
+                            'onclick'=>'return confirm("'.__('message.confirm_delete').'")'
+                    ))!!}
+                {!! Form::close() !!}
+            </div>
+        </div>
+        <div class="box-body table-responsive no-padding">
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th>ID</th><td>{{ $%%crudNameSingular%%->%%primaryKey%% }}</td>
+                    </tr>
+                    %%formBodyHtmlForShowView%%
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+@endsection

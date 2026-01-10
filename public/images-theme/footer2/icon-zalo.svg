@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.28674in" height="2.04314in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 535.15 478.14"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M475.53 478.14l-414.84 0c-33.38,0 -60.69,-24.42 -60.69,-54.23l0 -370.64c0,-29.29 26.84,-53.27 59.63,-53.27l415.9 0c32.79,0 59.62,23.98 59.62,53.27l0 371.59c0,29.29 -26.84,53.28 -59.62,53.28z"/>
+   </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g style="clip-path:url(#id0)">
+   <image x="-49.39" y="-51.55" width="635.67" height="567.95" xlink:href="icon-zalo_Images\icon-zalo_ImgID1.png"/>
+  </g>
+  <rect class="fil0" x="-0" y="0" width="535.15" height="478.14" rx="29.6" ry="53.28"/>
+ </g>
+</svg>
