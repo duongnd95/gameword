@@ -29,7 +29,7 @@
         "realrashid/sweet-alert": "^3.2",
         "renatomarinho/laravel-page-speed": "^1.8",
         "spatie/laravel-menu": "^3.0",
-        "yoeunes/toastr": "^1.2",
+        "yoeunes/toastr": "^1.2"
         
     },
     "require-dev": {
