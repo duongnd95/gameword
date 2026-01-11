@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-6 col-md-3">
                     <a class="header__logo--link" href="{{ url('/') }}">
-                        <img src="{{ asset($settings['company_logo']) }}" alt="" class="img-fluid lazyloaded"
+                        <img src="{{ url($settings['company_logo']) }}" alt="" class="img-fluid lazyloaded"
                              width="100px" height="80px">
                     </a>
                 </div>

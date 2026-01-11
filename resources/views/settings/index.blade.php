@@ -50,7 +50,7 @@
                                 <div class="col-md-6">
                                     @if($item['type'] == 'image')
                                         @if($item['value'])
-                                            <img src={{asset(($item['value']))}} alt="logo" width="80">
+                                            <img src={{url(($item['value']))}} alt="logo" width="80">
                                         @endif
                                         <input name={{$item['key']}} type="file" accept="image/*">
                                     @elseif($item['type'] == 'number')
