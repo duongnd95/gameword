@@ -4,11 +4,10 @@ namespace App;
 
 use App\Traits\ImageResize;
 use Illuminate\Database\Eloquent\Model;
-use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 class Setting extends Model
 {
-    use Cachable, ImageResize;
+    use ImageResize;
     public static $imageFolder = "settings";
     public static $imageMaxWidth = 400;
     public static $imageMaxHeight = 400;
