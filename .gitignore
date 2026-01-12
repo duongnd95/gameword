@@ -2,6 +2,7 @@
 /public/hot
 /public/uploads
 /public/storage
+/public/ads.txt
 /storage/*.key
 /bootstrap/cache/*.php
 /vendor
